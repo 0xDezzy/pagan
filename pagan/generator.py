@@ -1,8 +1,8 @@
 # -*- coding: latin-1 -*-
 
 from PIL import Image, ImageDraw
-import hashgrinder
-import pgnreader
+from pagan.hashgrinder import *
+from pagan.pgnreader import *
 import hashlib
 import os
 import sys
