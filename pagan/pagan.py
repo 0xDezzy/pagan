@@ -1,5 +1,5 @@
 # -*- coding: latin-1 -*-
-from pagan.generator import * as generator
+import pagan.generator as generator
 import os
 
 
