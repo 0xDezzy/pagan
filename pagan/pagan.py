@@ -1,5 +1,5 @@
 # -*- coding: latin-1 -*-
-import generator
+from generator import *
 import os
 
 
