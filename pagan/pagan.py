@@ -1,5 +1,5 @@
 # -*- coding: latin-1 -*-
-import pagan.generator as generator
+import pagan.generator 
 import os
 
 
@@ -16,7 +16,7 @@ class Avatar():
 
     ALLOWED_EXTENSIONS = ['bmp', 'gif', 'png', 'tiff']
 
-    DEFAULT_HASHFUN = generator.HASH_MD5
+    DEFAULT_HASHFUN = pagan.generator.HASH_MD5
 
     def __init__(self, inpt, hashfun=DEFAULT_HASHFUN):
         """Initialize the avatar and creates the image."""
@@ -31,7 +31,7 @@ class Avatar():
             algo = self.DEFAULT_HASHFUN
         else:
             algo = hashfun
-        return generator.generate(inpt, algo)
+        return pagan.generator.generate(inpt, algo)
 
     def show(self):
         """Shows a preview of the avatar in an external
